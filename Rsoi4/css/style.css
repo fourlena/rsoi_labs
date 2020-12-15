@@ -1,0 +1,40 @@
+body {
+    font-size: 20px;
+    text-align: center;
+}
+table {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=radio] {
+    width:1.5em;
+    height:1.5em;
+}
+
+optgroup {
+    font-size: 20px;
+}
+
+#remove-top-button, #remove-bottom-button {
+    background-color: crimson;
+}
+
+#info-button {
+    background-color: dodgerblue;
+}

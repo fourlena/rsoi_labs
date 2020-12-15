@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+   
+    <button onclick="add()">Добавить</button>
+    <table border="1px" align="center" id="main-table">
+        <tr>
+            <td>header1</td>
+            <td>header2</td>
+        </tr>
+        <tr>
+            <td>cell1</td>
+            <td>cell2</td>
+        </tr>
+    </table>
+    <span>Что добавить?</span>
+    <select name="cars" id="cars">
+        <optgroup>
+            <option value="apple">apple</option>
+            <option value="banana">banana</option>
+            <option value="orange">orange</option>
+            <option value="grape">grape</option>
+        </optgroup>
+    </select>
+    <span>Куда добавить?</span>
+    <select name="direction" id="direction">
+        <optgroup>
+            <option value="up">Вверх</option>
+            <option value="down">Вниз</option>
+            <option value="right">Вправо</option>
+            <option value="left">Влево</option>
+        </optgroup>
+    </select>
+    <br>
+    <input type="radio" name="where" value="row">Строка
+    <input type="radio" name="where" value="col">Столбец
+
+    <br>
+
+    <button id="info-button" onclick="refreshStats()">Обновить сколько чего было добавлено</button><br>
+    <span id="colstat">Колонки:</span><span id="rowstat">Столбцы:</span> <br>
+    <button id="remove-top-button" onclick="removeTopRow()">Удалить верхнюю строку</button><br>
+    <button id="remove-bottom-button" onclick="removeBottomRow()">Удалить нижнюю строку</button>
+</body>
+<script src="../js/tableTransformation.js"></script>
+</html>
