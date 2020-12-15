@@ -1,0 +1,71 @@
+body {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 1.5em;
+}
+
+button {
+  border-radius: 3px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  
+.add-record {
+  background-color: #4CAF50; 
+}
+
+.delete-record {
+  background-color: red; 
+}
+
+.cleanup-form {
+  background-color: #e0ae24; 
+}
+
+.show-records {
+  background-color: #2101d8; 
+}
+
+.show-max-min-time-records, .add-custom-field {
+  color: black;
+}
+
+table {
+    margin: auto;
+}
+
+.form-input {
+  
+    margin: auto;
+    width: 800px;
+    padding: 2em;
+    background-color:rgb(173, 219, 86) ;
+}
+
+input[type="text"], input[type="time"], select {
+  font-size: 1.5em;
+}
+
+.results {
+  display: none;
+  position: absolute;
+  margin: 1% auto;
+  left: 0;
+  right: 0;
+  background-color: #d4e068;
+}
+
+.results > table, .results > th, .results > td  {
+  border: 1px solid black;
+  border-collapse: collapse;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <h1>Форма клиента автостоянки</h1>
+    <div class="form-input">
+        <form action="">
+            <table>
+                <tr>
+                    <td>Модель авто:</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>ФИО владельца:</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Номер авто:</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Время стоянки:</td>
+                    <td><input type="time"></td>
+                </tr>
+                <tr>
+                    <td>ID записи:</td>
+                    <td> <select id="ids">
+                        </select></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Пользовательское поле:</td>
+                    <td><input type="text" placeholder="Название поля"></td>
+                </tr>
+                <tr>
+                    <td> <input type="text" placeholder="Значение">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <div class="buttons">
+        <button class="add-record" onclick="inserRow()">Добавить запись</button>
+        <button class="cleanup-form" onclick="cleanup()">Очистить форму</button>
+        <button class="delete-record" onclick="removeRow()">Удалить запись</button>
+        <button class="show-records" onclick="showResults()">Показать все записи</button><br>
+        <button class="show-max-min-time-records" onclick="showMaxMinTimeRecords()">Вывести записи с максимальным и
+            минимальным временем</button>
+    </div>
+
+    <div class="results"></div>
+</body>
+
+<script src="../js/main.js"></script>
+
+</html>
